@@ -19,7 +19,8 @@ class ProductControllerTest {
     @Autowired
     ProductController productController;
 
-    @MockBean(name = "SelfProductService")
+    //@MockBean(name = "SelfProductService")
+    @MockBean
     private ProductService productService;
 
     @Test //(expected = IndexOutOfBoundsException.class)
